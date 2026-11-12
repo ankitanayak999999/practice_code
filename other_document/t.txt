@@ -1,1 +1,15 @@
+Before proceeding with the Core Card data mapping, we would like to understand the account hierarchy and data granularity maintained in the source system.
 
+For reference, our existing Consumer Card (TC2) system provides data at two different levels:
+
+- **Parent/Family Account Level:** One account can have multiple associated cards/cardholders. Financial attributes such as credit limit, outstanding balance, available credit, and other balances are maintained at this level.
+- **Individual Card/Cardholder Level:** Contains individual cardholder information such as name, address, contact details, and other card-specific attributes.
+
+Could you please clarify the following for Core Card?
+
+1. Does Core Card follow a similar parent-child account structure, where multiple individual cards/accounts can be associated with one parent/billing account?
+2. Or does each account operate independently, without any parent-child account relationship?
+3. At what level are financial attributes such as credit limit, outstanding balance, available credit, and other balances maintained — parent account level, individual account level, or both?
+4. If a parent-child relationship exists, what identifiers are available to establish the relationship between the parent account and individual accounts/cards?
+
+This understanding will help us determine the appropriate granularity for populating our existing Credit Card Account Info, Credit Card Parent Account Info, and corresponding Balance views.
