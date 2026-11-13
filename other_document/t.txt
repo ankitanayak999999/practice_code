@@ -1,9 +1,1 @@
-Delta product and City data migration: Used production data for profiling, impact analysis, and Data Hub versus City Data comparisons. Lower environments lacked the data scenarios and patterns needed for reliable analysis.
 
-Precision Lender: Used production-like data for analysis and impact assessment. Non-production data was insufficient; using pre-prod required a production data refresh, adding effort and dependencies.
-
-Data product and DEO impact analysis: Checked production lineage, dependencies, view definitions, and table structures. Lower environments could contain metadata or objects not deployed to production, resulting in inaccurate impact analysis.
-
-Ad hoc intake requests: Used production data to confirm whether requested data or objects existed and assess the available data before engaging Development. At this stage, non-prod refreshes and Development support might not be available.
-
-Business team data queries: For time-sensitive questions from Precision Lender, QFC, or other business teams about shared datasets, used production data to investigate reported results. Lower environments might not contain the relevant data, and refreshing them required coordination with Development, which typically was not involved in these requests.
